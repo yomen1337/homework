@@ -1,0 +1,51 @@
+body {
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+/* стилизует внешку */
+.form {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  max-width: 250px;
+  padding: 15px;
+}
+/* убирает первую обводку */
+.form-group {
+  border: none;
+  padding: 0;
+}
+/* отступ + жир */
+.name-title {
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 10px;
+}
+/* отступ + блоковидность */
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+.input,
+textarea {
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  min-width: 220px;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  outline: none;
+}
+/* вертикаль + делает огран по движу */
+.textarea {
+  resize: vertical;
+  min-height: 40px;
+  max-height: 130px;
+  margin-bottom: 0;
+}
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-top: 10px;
+}

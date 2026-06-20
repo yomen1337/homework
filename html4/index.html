@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма Кредита на Li9</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: rgb(66 66 66)">
+    <form class="form">
+      <fieldset class="form-group">
+        <legend class="name-title">Ваши личные данные</legend>
+        <label for="name" class="label">Ваше имя</label>
+        <input
+          id="name"
+          class="input"
+          type="text"
+          inputmode="name"
+          placeholder="Имя"
+          name="name"
+          required
+        />
+        <label for="age" class="label">Ваш возраст</label>
+        <input
+          id="age"
+          class="input"
+          type="number"
+          inputmode="date"
+          placeholder="Возраст"
+          name="age"
+          required
+        />
+        <label for="phone" class="label">Ваш номер телефона</label>
+        <input
+          id="phone"
+          class="input"
+          type="tel"
+          inputmode="namberic"
+          placeholder="Телефон"
+          name="phone"
+          required
+        />
+        <label for="email" class="label">Ваша почта</label>
+        <input
+          id="email"
+          class="input"
+          type="email"
+          inputmode="email"
+          placeholder="Почта"
+          name="email"
+          required
+        />
+      </fieldset>
+      <fieldset class="form-group">
+        <label class="label"></label>
+        <textarea
+          class="textarea"
+          name="soobsenie"
+          placeholder="Сообщение"
+          required
+        ></textarea>
+        <label class="label-1"></label>
+        <input type="checkbox" name="checkbox" required /> Я принимаю правила
+      </fieldset>
+      <button class="button">Отправить</button>
+    </form>
+  </body>
+</html>
