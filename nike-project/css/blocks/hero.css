@@ -7,6 +7,7 @@
     padding-bottom: 94px;
   }
 }
+
 @media (width <= 576px) {
   .hero {
     padding-bottom: 80px;
@@ -17,17 +18,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  /* min-width 375px, max-width 922px */
   min-height: clamp(433px, 13.823rem + 56.49vw, 742px);
 }
 
 @media (width > 768px) {
   .hero__container {
-    padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
+
 @media (width <= 768px) and (width > 576px) {
   .hero__container {
-    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
 
@@ -66,6 +69,7 @@
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--secondary-color);
 }
 
