@@ -18,7 +18,11 @@
   margin-inline: auto;
 }
 
-img {
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -43,9 +47,34 @@ button:focus-visible {
   font-weight: 400;
 }
 
+.title-sm,
 .title-md {
   font-weight: 600;
-  font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
   text-transform: uppercase;
   color: var(--main-color);
+}
+
+.title-md {
+  font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
+}
+
+.title-sm {
+  font-size: clamp(24px, 1.023rem + 2.04rem, 32px);
+}
+
+@media (width > 576px) {
+  .section {
+    padding-bottom: 140px;
+  }
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+@media (width <= 576px) {
+  .section {
+    padding-bottom: 80px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+  }
 }
