@@ -17,6 +17,7 @@
       src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
       defer
     ></script>
+    <script src="./js/fslightbox.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
     <title>Nike Aur Mag</title>
   </head>
@@ -356,8 +357,243 @@
           </section>
         </div>
       </section>
+      <section id="stats" class="stats section">
+        <div class="container">
+          <h2 class="stats__title title-md section__title">Характеристики</h2>
+          <div class="stats__video">
+            <picture>
+              <source
+                srcset="./img/characteristics-video-preview.webp"
+                type="image/webp"
+              />
+              <img
+                class="stats__img"
+                src="./img/characteristics-video-preview.jpg"
+                width="1240"
+                height="600"
+                loading="lazy"
+                alt="Превью видео про Nike"
+              />
+            </picture>
+            <a
+              href="https://youtu.be/ZqpWjS2AJZE?t=13"
+              class="stats__video-play"
+              target="_blank"
+              title="Click me"
+              data-fslightbox
+            >
+              <img
+                class="stats__video-play-icon"
+                src="./icons/play-icon.svg"
+                width="17"
+                height="24"
+                alt="Запустить видео"
+              />
+            </a>
+          </div>
+          <div class="stats__grid">
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#planet"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">Футуристический дизайн</h3>
+              <p class="stats__card-txt">
+                Nike Air Mag выделяются своим уникальным и оригинальным
+                дизайном, который сразу же привлекает внимание. Эта модель
+                создана для тех, кто ценит стиль, вдохновленный наукой и
+                фантастикой
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#laces"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">
+                Автоматическая шнуровка
+              </h3>
+              <p class="stats__card-txt">
+                Инновационная система автоматической шнуровки обеспечивает
+                идеальную фиксацию обуви на ноге без необходимости вручную
+                завязывать шнурки, что значительно повышает комфорт
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#block"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">Ограниченный выпуск</h3>
+              <p class="stats__card-txt">
+                Nike Air Mag были выпущены в ограниченном количестве, что делает
+                каждую пару желанным объектом для коллекционеров и любителей
+                уникальных кроссовок
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#bulb"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">Встроенная подсветка</h3>
+              <p class="stats__card-txt">
+                Благодаря светодиодной подсветке, кроссовки выглядят эффектно в
+                темное время суток. Это придает им еще больше оригинальности и
+                уникальности
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#sneakers"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">Комфорт и поддержка</h3>
+              <p class="stats__card-txt">
+                Модель предлагает высокий уровень комфорта благодаря
+                качественной амортизации и поддержке стопы, что делает их
+                идеальными для длительного ношения
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#materials"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">Современные материалы</h3>
+              <p class="stats__card-txt">
+                Nike Air Mag изготовлены из высококачественных синтетических
+                материалов, которые обеспечивают долговечность, устойчивость к
+                износу и легкость в уходе
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#runner"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">Хорошая сцепляемость</h3>
+              <p class="stats__card-txt">
+                Подошва кроссовок обладает отличным сцеплением с различными
+                поверхностями, что обеспечивает надежность при ходьбе и беге
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#diamond"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">Культовый статус</h3>
+              <p class="stats__card-txt">
+                Nike Air Mag стали культовыми благодаря своему появлению в кино
+                "Назад в будущее 2", что подчеркивает их историческую и
+                культурную значимость
+              </p>
+            </article>
+            <article class="stats__card">
+              <svg class="stats__card-icon" width="56" height="56">
+                <use href="./icons/stats-sprite.svg#firework"></use>
+              </svg>
+              <h3 class="stats__card-title title-xs">
+                Яркое дополнение к любому образу
+              </h3>
+              <p class="stats__card-txt">
+                Кроссовки легко вписываются в различные стили одежды, позволяя
+                создавать уникальные образы. Они могут дополнить как спортивный,
+                так и повседневный стиль
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="top=models" class="tm section">
+        <div class="container">
+          <h2 class="tm__title title-md section-title">
+            Другие <span class="tm__title-accent">Топ</span> модели от Nike
+          </h2>
+          <div class="tm__products">
+            <article class="tm__product">
+              <a href="#" class="tm__product-link">
+                <div class="tm__product-contant">
+                  <h3 class="tm__product-title title-xs">
+                    Nike Air Yeezy 2 “Red October”
+                  </h3>
+                  <svg width="24" height="24">
+                    <use
+                      class="tm__product-icon"
+                      href="./icons/main-sprite.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </div>
+                <picture class="tm__product-wrapper">
+                  <source
+                    srcset="./img/top-models/top-model-1.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    class="tm__product-img"
+                    src="./images/top-models/top-model-1.png"
+                    width="190"
+                    height="143"
+                    loading="lazy"
+                    alt="Кроссовки Nike Air Yeezy 2 “Red October”"
+                  />
+                </picture>
+              </a>
+            </article>
+            <article class="tm__product">
+              <a href="#" class="tm__product-link">
+                <div class="tm__product-contant">
+                  <h3 class="tm__product-title title-xs">
+                    Wings x Air Jordan 1
+                  </h3>
+                  <svg width="24" height="24">
+                    <use
+                      class="tm__product-icon"
+                      href="./icons/main-sprite.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </div>
+                <picture class="tm__product-wrapper">
+                  <source
+                    srcset="./img/top-models/top-model-2.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/top-models/top-model-2.png"
+                    width="190"
+                    height="120"
+                    loading="lazy"
+                    alt="Красный кроссовок Nike"
+                  />
+                </picture>
+              </a>
+            </article>
+            <article class="tm__product">
+              <a href="#" class="tm__product-link">
+                <div class="tm__product-contant">
+                  <h3 class="tm__product-title title-xs">
+                    Nike Dunk SB Low Yellow Lobster
+                  </h3>
+                  <svg width="24" height="24">
+                    <use
+                      class="tm__product-icon"
+                      href="./icons/main-sprite.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </div>
+                <picture class="tm__product-wrapper">
+                  <source
+                    srcset="./img/top-models/top-model-3.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./img/top-models/top-model-3.png"
+                    width="190"
+                    height="88"
+                    loading="lazy"
+                    alt="Красный кроссовок Nike"
+                  />
+                </picture>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="page__footer">
+    <!-- <footer class="page__footer">
       <div class="container">
         <div class="footer__down">
           <a class="footer__logo" href="index.html">
@@ -390,6 +626,6 @@
           >
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
