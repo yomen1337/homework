@@ -320,8 +320,12 @@
                   </button>
                 </div>
                 <div class="product__buy-wrapper">
-                  <button class="product__buy-button">
-                    Купить в один клик
+                  <button
+                    class="product__buy-button"
+                    data-modal-button="buy"
+                    data-modal-speed="300"
+                  >
+                    Купить в 1 клик
                   </button>
                   <button
                     class="product__cart-button"
@@ -769,39 +773,84 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="page__footer">
-      <div class="container">
-        <div class="footer__down">
-          <a class="footer__logo" href="index.html">
-            <img
-              class="logo__img"
-              src="./icons/logo-icon.svg"
-              width="50"
-              height="50"
-              alt="Логотип сайта"
-            />
-          </a>
-          <nav class="footer__nav">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#air-mag" class="footer__link" lang="en">AirMag</a>
-              </li>
-              <li class="footer__item">
-                <a href="#sizes" class="footer__link">Размеры</a>
-              </li>
-              <li class="footer__item">
-                <a href="#stats" class="footer__link">Характеристики</a>
-              </li>
-              <li class="footer__item">
-                <a href="#top=models" class="footer__link">Другие ТОП модели</a>
-              </li>
-            </ul>
-          </nav>
-          <a href="tel:+79292992929" class="footer__phone-link"
-            >+7 (929) 299 29-29</a
-          >
+    <footer class="footer">
+      <div class="container footer__container">
+        <a class="logo footer__logo" href="index.html">
+          <img
+            class="logo__img"
+            src="./icons/logo-icon.svg"
+            width="50"
+            height="50"
+            alt="Логотип сайта"
+          />
+        </a>
+        <nav class="menu footer__menu" aria-label="Главное меню">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#air-mag" class="menu__link" lang="en">AirMag</a>
+            </li>
+            <li class="menu__item">
+              <a href="#sizes" class="menu__link">Размеры</a>
+            </li>
+            <li class="menu__item">
+              <a href="#stats" class="menu__link">Характеристики</a>
+            </li>
+            <li class="menu__item">
+              <a href="#top=models" class="menu__link">Другие ТОП модели</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="tel:+79292992929" class="footer__phone-link"
+          >+7 (929) 299 29-29</a
+        >
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__window modal-buy" data-modal-window="buy">
+        <button
+          class="modal__close"
+          aria-label="Закрыть"
+          title="Закрыть"
+          data-modal-close
+        >
+          <svg width="24" height="24">
+            <use href="./icons/sprite.svg#menu-close"></use>
+          </svg>
+        </button>
+        <div class="modal__content modal-buy__content">
+          <h3 class="modal-buy__title title-sm">Заявка на заказ</h3>
+          <form class="modal-buy__form">
+            <label class="modal-buy__label">
+              <input
+                class="modal-buy__input"
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                required
+              />
+            </label>
+            <label class="modal-buy__label">
+              <input
+                class="modal-buy__input"
+                type="tel"
+                placeholder="Номер телефона"
+                name="phone"
+                required
+              />
+            </label>
+            <label class="modal-buy__label">
+              <input
+                class="modal-buy__input"
+                type="email"
+                placeholder="Email"
+                name="email"
+                required
+              />
+            </label>
+            <button class="modal-buy__submit">Отправить</button>
+          </form>
         </div>
       </div>
-    </footer> -->
+    </div>
   </body>
 </html>
