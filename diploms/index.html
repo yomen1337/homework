@@ -1,0 +1,194 @@
+<!doctype html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="./icon/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/index.js" type="module"></script>
+    <title>California</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo logo__header" href="#">
+          <svg width="170" height="21">
+            <use class="logo__img" href="./icon/logo.svg#logo"></use>
+          </svg>
+        </a>
+        <nav
+          class="menu header__menu"
+          id="header__menu"
+          aria-label="Главное меню"
+        >
+          <ul class="menu__list title">
+            <li class="menu__item" title="all products">
+              <a href="#all-products" class="menu__link">all products</a>
+            </li>
+            <li class="menu__item" title="Solutions">
+              <a href="#" class="menu__link">
+                Solutions
+                <svg width="15" height="9">
+                  <use href="./icon/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu__item" title="About">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="menu__item" title="Support">
+              <a href="#" class="menu__link">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__store">
+          <button class="header__actions-button" title="search">
+            <svg class="header__icon-store" width="24" height="24">
+              <use href="./icon/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <button class="header__actions-button" title="basket">
+            <svg class="header__icon-store" width="40" height="24">
+              <use href="./icon/sprite.svg#store"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="presents">
+        <div class="container">
+          <section class="product">
+            <div class="product__slider-wrapper">
+              <button
+                class="product__slide-button product__slide-button--prev"
+                aria-label="Предыдущий слайд"
+              >
+                <svg width="12" height="24">
+                  <use
+                    class="product__arrow"
+                    href="./icon/arrow.svg#arrow-presents"
+                  ></use>
+                </svg>
+              </button>
+              <div class="swiper product__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product__slide">
+                      <div class="product__slide-left">
+                        <h1 class="product__title">
+                          The new phones are here take a look.
+                        </h1>
+                        <p class="product__desc">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Scelerisque in est dui, aliquam, tempor.
+                          Faucibus morbi turpis.
+                        </p>
+                        <button class="product__button">Explore</button>
+                      </div>
+                      <div class="product__slide-right">
+                        <picture>
+                          <source
+                            srcset="./image/presents/iphone.webp"
+                            type="image"
+                          />
+                          <img
+                            height="550px"
+                            width="647px"
+                            src="./image/presents/iphone.png"
+                            alt="3 Iphone"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__slide">
+                      <div class="product__slide-left">
+                        <h1 class="product__title">
+                          The new phones are here take a look.
+                        </h1>
+                        <p class="product__desc">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Scelerisque in est dui, aliquam, tempor.
+                          Faucibus morbi turpis.
+                        </p>
+                        <button class="product__button">Explore</button>
+                      </div>
+                      <div class="product__slide-right">
+                        <picture>
+                          <source
+                            srcset="./image/presents/iphone.webp"
+                            type="image"
+                          />
+                          <img
+                            height="550px"
+                            width="647px"
+                            src="./image/presents/iphone.png"
+                            alt="3 Iphone"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product__slide">
+                      <div class="product__slide-left">
+                        <h1 class="product__title">
+                          The new phones are here take a look.
+                        </h1>
+                        <p class="product__desc">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Scelerisque in est dui, aliquam, tempor.
+                          Faucibus morbi turpis.
+                        </p>
+                        <button class="product__button">Explore</button>
+                      </div>
+                      <div class="product__slide-right">
+                        <picture>
+                          <source
+                            srcset="./image/presents/iphone.webp"
+                            type="image"
+                          />
+                          <img
+                            height="550px"
+                            width="647px"
+                            src="./image/presents/iphone.png"
+                            alt="3 Iphone"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="product__slide-button product__slide-button--back"
+                aria-label="Следующий слайд"
+              >
+                <svg width="12" height="24">
+                  <use
+                    class="product__arrow"
+                    href="./icon/arrow.svg#arrow-presents"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

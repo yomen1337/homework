@@ -1,0 +1,22 @@
+.page {
+  font-family: var(--firstf);
+}
+
+.page__body {
+  min-width: 375px;
+  color: var(--main-color);
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+.title {
+  font-family: var(--ff);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000;
+}

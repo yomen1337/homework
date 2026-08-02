@@ -1,0 +1,24 @@
+:root {
+  /* font-family */
+  --firstf: "Inter", sans-serif;
+  --secondf: "ReadexPro", sans-serif;
+
+  /* color */
+  --main-color: #000;
+  --second-color: #fff;
+  --link-color: #1308f3;
+
+  /* container */
+  --container-width: 1294px;
+  --container-padding: 73px;
+
+  /* transition */
+  --trans-time: 0.8s;
+
+  /* z-index */
+  --z--1: -1;
+  --z-0: 0;
+  --z-1: 1;
+  --z-2: 2;
+  --z-3: 3;
+}
