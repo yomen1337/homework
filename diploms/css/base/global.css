@@ -20,3 +20,22 @@
   text-transform: uppercase;
   color: #000;
 }
+
+.section-title {
+  font-family: var(--secondf);
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 125%;
+  text-align: center;
+  color: #000;
+}
+
+.section-title-sm {
+  font-family: var(--secondf);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 129%;
+  text-align: center;
+  color: #000;
+  margin-top: 9px;
+}

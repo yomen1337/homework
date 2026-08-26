@@ -1,0 +1,152 @@
+.shop {
+  margin-top: 75px;
+}
+.shop__title {
+  margin-bottom: 9px;
+}
+
+.shop__desc {
+  font-family: var(--secondf);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--main-color);
+  width: 628px;
+  position: relative;
+  left: 25.7%;
+  margin-bottom: 55px;
+}
+
+.shop__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 2;
+  gap: 16px;
+  grid-template-areas:
+    "laptop laptop laptop laptop laptop laptop phone phone phone tablet tablet tablet"
+    "laptop laptop laptop laptop laptop laptop phone phone phone tablet tablet tablet"
+    "laptop laptop laptop laptop laptop laptop phone phone phone tablet tablet tablet"
+    "laptop laptop laptop laptop laptop laptop phone phone phone tablet tablet tablet"
+    "laptop laptop laptop laptop laptop laptop phone phone phone tablet tablet tablet"
+    "laptop laptop laptop laptop laptop laptop phone phone phone tablet tablet tablet"
+    ". . . . . . phone phone phone tablet tablet tablet "
+    "watch watch watch watch watch watch phone phone phone tablet tablet tablet "
+    "watch watch watch watch watch watch phone phone phone tablet tablet tablet "
+    "watch watch watch watch watch watch phone phone phone tablet tablet tablet "
+    "watch watch watch watch watch watch phone phone phone tablet tablet tablet "
+    "watch watch watch watch watch watch phone phone phone tablet tablet tablet ";
+  margin-bottom: 100px;
+}
+
+.shop__info-title {
+  font-family: var(--secondf);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: right;
+  color: var(--main-color);
+}
+
+.shop__info-desc {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 128%;
+  text-align: right;
+  color: var(--main-color);
+}
+.laptop {
+  grid-area: laptop;
+  padding-inline: 42px;
+}
+
+.laptop .shop__info-text {
+  position: relative;
+  left: 363px;
+  justify-items: right;
+  text-align: right;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.watch {
+  grid-area: watch;
+  position: relative;
+  top: 16px;
+}
+
+.watch .shop__info-text {
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.phones {
+  grid-area: phone;
+}
+
+.tablet {
+  grid-area: tablet;
+}
+
+.shop__card {
+  user-select: none;
+  cursor: default;
+  transition: transform var(--trans-time);
+}
+
+.shop__card:hover {
+  transform: scale(1.03);
+}
+
+.shop__card {
+  overflow: hidden;
+  background: var(--second-color);
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+}
+
+.shop__card img {
+  object-fit: cover;
+  display: block;
+}
+
+.shop__card-main {
+  display: flex;
+  align-items: center;
+}
+
+.watch .text-overlay {
+  text-align: center;
+}
+
+.phones img {
+  padding-top: 144px;
+  padding-left: 16px;
+}
+
+.phones .text-overlay {
+  display: block;
+  padding-top: 42px;
+  min-width: 250px;
+  padding-inline: 31px;
+}
+.phones .text-overlay p {
+  text-align: center;
+}
+.phones .text-overlay h3 {
+  text-align: center;
+}
+
+.tablet .text-overlay {
+  display: block;
+  padding-top: 115px;
+  padding-inline: 31px;
+  margin-bottom: 41px;
+}
+
+.tablet .text-overlay p {
+  text-align: center;
+}
+.tablet .text-overlay h3 {
+  text-align: center;
+}

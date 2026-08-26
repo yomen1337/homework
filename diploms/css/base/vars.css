@@ -6,7 +6,13 @@
   /* color */
   --main-color: #000;
   --second-color: #fff;
+  --gray-color: #4b4b4b;
   --link-color: #1308f3;
+  --link-color-2: #002d80;
+  --link-color-3: #2ad4be;
+
+  --footer-back-color: #f8f9fa;
+  --footer-border-color: #dce5e2;
 
   /* container */
   --container-width: 1294px;

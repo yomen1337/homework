@@ -18,6 +18,7 @@
       defer
     ></script>
     <script src="./js/index.js" type="module"></script>
+    <script src="./js/search-list.js" type="module"></script>
     <title>California</title>
   </head>
   <body class="page__body">
@@ -37,13 +38,45 @@
             <li class="menu__item" title="all products">
               <a href="#all-products" class="menu__link">all products</a>
             </li>
-            <li class="menu__item" title="Solutions">
-              <a href="#" class="menu__link">
+            <!-- <li class="menu__item" title="Solutions">
+              <a href="#" class="menu__link menu__link-more">
                 Solutions
-                <svg width="15" height="9">
+                <svg class="menu__arrow-svg" width="15" height="9">
                   <use href="./icon/sprite.svg#arrow"></use>
                 </svg>
               </a>
+              <ul class="menu__drop-list">
+                <li class="menu__drop-item">
+                  <a href="#" class="menu__drop-link">Apple</a>
+                </li>
+                <li class="menu__drop-item">
+                  <a href="#" class="menu__drop-link">Samsung</a>
+                </li>
+                <li class="menu__drop-item">
+                  <a href="#" class="menu__drop-link">Xiaomi</a>
+                </li>
+                <li class="menu__drop-item">
+                  <a
+                    href="https://avatars.mds.yandex.net/i?id=4120402e482d3b53ed221daf6273ef54_l-12260990-images-thumbs&n=13"
+                    class="menu__drop-link"
+                    >БЕЛАЗ-7521</a
+                  >
+                </li>
+              </ul> -->
+              <li class="menu__item dropdown" title="Solutions">
+                <a class="dropbtn">
+                  Solutions
+                <svg class="menu__arrow-svg" width="15" height="9">
+                  <use href="./icon/sprite.svg#arrow"></use>
+                </svg>
+                </a>
+                   <div class="dropdown-content">
+                    <a href="https://www.amazon.in/">Amazon</a>
+                    <a href="https://www.flipkart.com/">Flipkart</a>
+                    <a href="https://www.snapdeal.com/">napdeal</a>
+                    <a href="https://paytm.com/">paytm</a>
+                  </div>
+              </li>
             </li>
             <li class="menu__item" title="About">
               <a href="#" class="menu__link">About</a>
@@ -55,12 +88,12 @@
         </nav>
         <div class="header__store">
           <button class="header__actions-button" title="search">
-            <svg class="header__icon-store" width="24" height="24">
+            <svg class="header__icon-search" width="24" height="24">
               <use href="./icon/sprite.svg#search"></use>
             </svg>
           </button>
           <button class="header__actions-button" title="basket">
-            <svg class="header__icon-store" width="40" height="24">
+            <svg class="header__icon-basket" width="40" height="24">
               <use href="./icon/sprite.svg#store"></use>
             </svg>
           </button>
@@ -68,7 +101,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="presents">
+     <section class="presents">
         <div class="container">
           <section class="product">
             <div class="product__slider-wrapper">
@@ -76,11 +109,8 @@
                 class="product__slide-button product__slide-button--prev"
                 aria-label="Предыдущий слайд"
               >
-                <svg width="12" height="24">
-                  <use
-                    class="product__arrow"
-                    href="./icon/arrow.svg#arrow-presents"
-                  ></use>
+                <svg class="product__arrow" width="12" height="24">
+                  <use href="./icon/arrow.svg#arrow-presents"></use>
                 </svg>
               </button>
               <div class="swiper product__slider">
@@ -89,7 +119,7 @@
                     <div class="product__slide">
                       <div class="product__slide-left">
                         <h1 class="product__title">
-                          The new phones are here take a look.
+                          1. The new phones are here take a look.
                         </h1>
                         <p class="product__desc">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -118,7 +148,7 @@
                     <div class="product__slide">
                       <div class="product__slide-left">
                         <h1 class="product__title">
-                          The new phones are here take a look.
+                          2. The new phones are here take a look.
                         </h1>
                         <p class="product__desc">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -147,7 +177,7 @@
                     <div class="product__slide">
                       <div class="product__slide-left">
                         <h1 class="product__title">
-                          The new phones are here take a look.
+                          3. The new phones are here take a look.
                         </h1>
                         <p class="product__desc">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -171,24 +201,510 @@
                         </picture>
                       </div>
                     </div>
-                  </div>
+                    </div>
+                  
                 </div>
+                <div class="product__slider-pagination"></div>
               </div>
               <button
                 class="product__slide-button product__slide-button--back"
                 aria-label="Следующий слайд"
               >
-                <svg width="12" height="24">
-                  <use
-                    class="product__arrow"
-                    href="./icon/arrow.svg#arrow-presents"
-                  ></use>
+                <svg class="product__arrow" width="12" height="24">
+                  <use href="./icon/arrow.svg#arrow-presents"></use>
                 </svg>
               </button>
             </div>
           </section>
         </div>
       </section>
+      <section class="shop">
+        <div class="container">
+          <div class="shop__text">
+            <h2 class="shop__title section-title">
+              Shop our latest offers and categories
+            </h2>
+            <p class="shop__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="shop__container">
+            <article class="shop__card laptop">
+              <img
+                width="500"
+                height="377"
+                src="./image/shop/png/nout.png"
+                alt="Laptop"
+              />
+              <div class="shop__info-text text-overlay">
+                <p class="shop__info-desc">Laptops</p>
+                <h3 class="shop__info-title">True Laptop Solution</h3>
+              </div>
+            </article>
+            <article class="shop__card watch">
+              <div class="shop__card-main">
+                <img
+                  class="shop__watch"
+                  width="381"
+                  height="270"
+                  src="./image/shop/png/rem.png"
+                  alt="Watch"
+                />
+                <div class="shop__info-text text-overlay">
+                  <p class="shop__info-desc">Watch</p>
+                  <h3 class="shop__info-title">Not just stylish</h3>
+                </div>
+              </div>
+            </article>
+            <article class="shop__card phones">
+              <img
+                width="405"
+                height="367"
+                src="./image/shop/png/phone.png"
+                alt="Phones"
+              />
+              <div class="shop__info-text text-overlay">
+                <p class="shop__info-desc">Phones</p>
+                <h3 class="shop__info-title">Your day to day life</h3>
+              </div>
+            </article>
+            <article class="shop__card tablet">
+              <div class="shop__info-text text-overlay">
+                <p class="shop__info-desc">Tablet</p>
+                <h3 class="shop__info-title">Empower your work</h3>
+              </div>
+              <img
+                width="467"
+                height="425"
+                src="./image/shop/png/ruk.png"
+                alt="Tablet"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="ode">
+        <div class="container">
+          <div class="ode__text">
+            <h2 class="ode__title section-title">
+              Save on our most selled items.
+            </h2>
+            <p class="ode__desc section-title-sm">
+              Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+            </p>
+          </div>
+          <div class="ode__container">
+            <div class="ode__cards">
+              <article class="ode__card">
+                <div class="ode__card-header">
+                  <picture>
+                    <source
+                      srcset="./image/ode/webp/mac.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./image/ode/png/mac.png"
+                      width="247"
+                      height="214"
+                      loading="lazy"
+                      alt="MacBook"
+                    />
+                  </picture>
+                </div>
+                <div class="ode__card-footer">
+                  <h4 class="ode__card-title">MacBook Pro 13</h4>
+                  <p class="ode__card-desc">
+                    Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                    amet
+                  </p>
+                  <a class="ode__card-value" href="index.html">
+                    <button class="ode__card-value-button">
+                      $ 1,200.00 USD
+                    </button>
+                  </a>
+                </div>
+              </article>
+              <article class="ode__card">
+                <div class="ode__card-header">
+                  <picture>
+                    <source
+                      srcset="./image/ode/webp/voch.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./image/ode/png/voch.png"
+                      width="247"
+                      height="214"
+                      loading="lazy"
+                      alt="MacBook"
+                    />
+                  </picture>
+                </div>
+                <div class="ode__card-footer">
+                  <h4 class="ode__card-title">Smart Galaxy Watch 3</h4>
+                  <p class="ode__card-desc">
+                    Tempus non fugit, sed obediet. Ratio et pulchritudo in unum
+                    coalescunt.
+                  </p>
+                  <a class="ode__card-value" href="index.html">
+                    <button class="ode__card-value-button">$ 199.00 USD</button>
+                  </a>
+                </div>
+              </article>
+              <article class="ode__card">
+                <div class="ode__card-header">
+                  <picture>
+                    <source
+                      srcset="./image/ode/webp/mac2.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./image/ode/png/mac2.png"
+                      width="247"
+                      height="214"
+                      loading="lazy"
+                      alt="MacBook"
+                    />
+                  </picture>
+                </div>
+                <div class="ode__card-footer">
+                  <h4 class="ode__card-title">MacBook Air M1</h4>
+                  <p class="ode__card-desc">
+                    Unus calculus omnia regit. Nullus ventus, nullus sonus —
+                    tantum celeritas.
+                  </p>
+                  <a class="ode__card-value" href="index.html">
+                    <button class="ode__card-value-button">
+                      $ 1,009.00 USD
+                    </button>
+                  </a>
+                </div>
+              </article>
+              <article class="ode__card">
+                <div class="ode__card-header">
+                  <picture>
+                    <source
+                      srcset="./image/ode/webp/ipad.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      src="./image/ode/png/ipad.png"
+                      width="247"
+                      height="214"
+                      loading="lazy"
+                      alt="MacBook"
+                    />
+                  </picture>
+                </div>
+                <div class="ode__card-footer">
+                  <h4 class="ode__card-title">iPad</h4>
+                  <p class="ode__card-desc">
+                    Tangere. Scribere. Creare. Ludere. Unum vitrum — omnia
+                    opera.
+                  </p>
+                  <a class="ode__card-value" href="index.html">
+                    <button class="ode__card-value-button">$ 610.00 USD</button>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bm">
+        <div class="container">
+          <div class="bm__text">
+            <h2 class="bm__title section-title">See the best around here</h2>
+            <p class="bm__desc section-title-sm">
+              Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+            </p>
+          </div>
+          <div class="bm__container">
+            <div class="bm__cards">
+              <article class="bm__card">
+                <p class="bm__card-desc">Smart light bulb pack</p>
+                <h3 class="bm__card-title">Latest and gratest</h3>
+                <button class="bm__card-button">Explore</button>
+                <picture class="bm__img">
+                  <source
+                    srcset="./image/best-models/webp/towotch.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./image/best-models/png/towotch.png"
+                    width="259"
+                    height="250"
+                    loading="lazy"
+                    alt="2 pars apple watch's"
+                  />
+                </picture>
+              </article>
+              <article class="bm__card">
+                <p class="bm__card-desc">Smart light bulb pack</p>
+                <h3 class="bm__card-title">Best selling</h3>
+                <button class="bm__card-button">Explore</button>
+                <picture class="bm__img">
+                  <source
+                    srcset="./image/best-models/webp/trio.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./image/best-models/png/trio.png"
+                    width="259"
+                    height="250"
+                    loading="lazy"
+                    alt="MacBook & 3 iphone's X/XR"
+                  />
+                </picture>
+              </article>
+              <article class="bm__card">
+                <p class="bm__card-desc">Smart light bulb pack</p>
+                <h3 class="bm__card-title">Every product</h3>
+                <button class="bm__card-button">Explore</button>
+                <picture class="bm__img-big">
+                  <source
+                    srcset="./image/best-models/webp/iphmac.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./image/best-models/png/iphmac.png"
+                    width="355"
+                    height="250"
+                    loading="lazy"
+                    alt="MacBook & iphone X/XR"
+                  />
+                </picture>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="idea">
+        <div class="container">
+          <div class="idea__text">
+            <h2 class="idea__title section-title">Ideas have a place here</h2>
+            <p class="idea__desc section-title-sm">
+              Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+            </p>
+          </div>
+          <div class="idea__container">
+            <div class="idea__container-left">
+              <picture>
+                <source
+                  srcset="./image/idea/webp/book.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./image/idea/png/book.png"
+                  width="620"
+                  height="420"
+                  loading="lazy"
+                  alt="Book with picture"
+                />
+              </picture>
+            </div>
+            <div class="idea__container-right">
+              <ul class="idea__list">
+                <li class="idea__item idea__any">
+                  <a href="" class="idea__link"
+                    >We Make It Easy To Find The Great Design Talent,
+                    Easier...</a
+                  >
+                </li>
+                <li class="idea__item idea__any">
+                  <a href="" class="idea__link"
+                    >Road Design Handbook For The International Road...</a
+                  >
+                </li>
+                <li class="idea__item idea__any">
+                  <a href="" class="idea__link"
+                    >The Best Kept Secrets About Creative People</a
+                  >
+                </li>
+                <li class="idea__item idea__any">
+                  <a href="" class="idea__link"
+                    >We Make It Easy To Find The Great Design Talent,
+                    Easier...</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="idea__link-more">
+            See All
+            <svg class="idea__link-arrow" width="25" height="30">
+              <use href="./icon/arrow-up.svg#up"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="list">
+        <div class="container">
+          <div class="list__header">
+            <h2 class="list__title">Looking for anything else?</h2>
+            <form class="list__form" action="#">
+              <svg class="list__icon-search" width="30" height="29">
+                <use href="./icon/sprite.svg#search"></use>
+              </svg>
+              <input
+                class="list__input"
+                id="searchInput"
+                type="search"
+                placeholder="Search keyword"
+              />
+            </form>
+            <ul class="list__tags">
+              <li>
+                <button class="list__tag searchTag">iPhone</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">Charger</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">Gift</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">Google Pixel 3</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">Keyboard</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">13 Pro Max</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">iPhone 12</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">Laptop</button>
+              </li>
+              <li>
+                <button class="list__tag searchTag">Mobile</button>
+              </li>
+            </ul>
+          </div>
+          <div class="list__footer">
+            <div class="list__footer-title">
+              <h2 class="list__title">Never miss a thing</h2>
+              <p class="list__desc">
+                Sign up for texts to be notified about our best offers on the
+                perfect gifts.
+              </p>
+            </div>
+            <picture class="list__footer-img">
+              <source
+                srcset="./image/list/webp/tehnic.webp"
+                type="webp/image"
+              />
+              <img
+                src="./image/list/png/tehnic.png"
+                width="233"
+                height="200"
+                loading="lazy"
+                alt="MacBock & 2 iphone X/XR & apple watch"
+              />
+            </picture>
+            <div class="list__footer-form">
+              <input
+                class="list__footer-input"
+                type="email"
+                placeholder="Your email"
+              />
+              <a href="#" class="list__footer-link">
+                <button class="list__footer-button" type="submit">
+                  Sign up
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__header">
+          <div class="footer__icon">
+            <a class="logo footer__logo" href="#">
+              <svg class="logo__img" width="181" height="22">
+                <use class="logo__img" href="./icon/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <p class="footer__desc">
+              Sign up for texts to be notified about our best offers on the
+              perfect gifts.
+            </p>
+          </div>
+          <div class="footer__all-product footer__gap">
+            <h3 class="footer__title">All products</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Phones</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Watch</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Tablet</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Laptops</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__cm footer__gap">
+            <h3 class="footer__title">Company</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__sup footer__gap">
+            <h3 class="footer__title">Support</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Style Guide</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Licensing</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Change Log</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__followme footer__gap">
+            <h3 class="footer__title">Follow Us</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Instagram</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Facebook</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">LinkedIn</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__list-link">Youtube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <a href="index.html" class="footer__author"
+            >Made By: <span class="footer__nameme">Fa3yy</span>🤐
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

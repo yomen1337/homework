@@ -7,3 +7,9 @@
 /* blocks */
 @import "./blocks/header.css";
 @import "./blocks/presents.css";
+@import "./blocks/shop.css";
+@import "./blocks/ode.css";
+@import "./blocks/bm.css";
+@import "./blocks/idea.css";
+@import "./blocks/list.css";
+@import "./blocks/footer.css";

@@ -1,6 +1,6 @@
 .product__slider-wrapper {
   position: relative;
-  z-index: var(--z-0);
+  z-index: var(--z-1);
   background: #dce5e2;
   border-radius: 32px;
 }
@@ -20,7 +20,76 @@
   position: relative;
   right: 32%;
   bottom: -70%;
+  stroke: currentColor;
 }
+
+.product__arrow:hover {
+  transform: scale(1.1);
+  transition: transform var(--trans-time);
+}
+
+/* .product__scroll-1 {
+  position: absolute;
+  bottom: 34px;
+  left: 322px;
+  width: 194px;
+  height: 2px;
+  background-color: #000;
+}
+.product__scroll-2 {
+  position: absolute;
+  bottom: 34px;
+  left: 550px;
+  width: 194px;
+  height: 2px;
+  background-color: #000;
+}
+.product__scroll-3 {
+  position: absolute;
+  bottom: 34px;
+  right: 322px;
+  width: 194px;
+  height: 2px;
+  background-color: #000;
+} */
+
+.product__slider-pagination {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px; /* регулируйте под ваш дизайн */
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 35px; /* расстояние между точками */
+  z-index: 10; /* поверх слайдов и навигации */
+  pointer-events: none; /* чтобы не перехватывать клики — только если не clickable: true */
+}
+
+/* Если clickable: true — тогда НЕ ставьте pointer-events: none */
+.product__slider-pagination {
+  pointer-events: auto; /* разрешаем клики по точкам */
+}
+
+/* Стиль точек */
+.product__slider-pagination .swiper-pagination-bullet {
+  width: 194px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+/* Активная точка */
+.product__slider-pagination .swiper-pagination-bullet-active {
+  background: #000; /* или ваш основной цвет бренда */
+  width: 194px;
+  height: 2px;
+  opacity: 1;
+}
+
+/* .product__slider-pagination .swiper-pagination-current {
+  font-weight: 600;
+  color: #000;
+  margin: 0 4px;
+} */
 
 .product__slide {
   display: flex;
@@ -52,6 +121,11 @@
   border: 1px solid var(--main-color);
   border-radius: 32px;
   padding: 14px 53px;
+  transition: transform var(--trans-time);
+}
+
+.product__button:hover {
+  transform: scale(1.05);
 }
 
 .product__slide-right {
