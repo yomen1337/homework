@@ -1,7 +1,8 @@
 .list__title {
   font-family: var(--secondf);
   font-weight: 400;
-  font-size: 42px;
+  /* min 375 max 1440*/
+  font-size: clamp(32px, 1.78rem + 0.94vw, 42px);
   line-height: 125%;
   text-align: center;
   color: #000;
@@ -18,17 +19,30 @@
   text-align: center;
 }
 
+/* .list__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
 .list__form {
   display: flex;
   gap: 20px;
   background-color: var(--footer-back-color);
   border: 1px solid #c5c5c5;
   border-radius: 100px;
-  width: 650px;
+  max-width: 650px;
   height: 60px;
   padding: 15px;
-  margin-inline: 322px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
+  margin-inline: 25%;
+}
+
+@media (width < 768px) {
+  .list__form {
+    margin-inline: 0;
+  }
 }
 
 .list__icon-search {
@@ -45,13 +59,19 @@
 }
 
 .list__tags {
-  max-width: 660px;
-  margin-inline: 317px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 7px 7px;
+  max-width: 660px;
+  margin-inline: auto;
+}
+
+@media (width < 992px) {
+  .list__tags {
+    margin-bottom: 10px;
+  }
 }
 
 .list__tag {
@@ -92,6 +112,12 @@
   padding-bottom: 43px;
 }
 
+@media (width < 992px) {
+  .list__footer {
+    margin: 0;
+  }
+}
+
 .list__footer-img {
   display: flex;
   align-items: center;
@@ -101,13 +127,13 @@
 .list__footer-form {
   display: flex;
   align-items: stretch;
-  max-width: 400px;
+  min-width: 400px;
   height: 50px;
   border: 1px solid var(--main-color);
   border-radius: 54px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-inline: 267px;
+  margin-inline: 25%;
 }
 
 .list__footer-input {
@@ -139,4 +165,23 @@
   border-radius: 99px;
   background: var(--gray-color);
   transform: translateX(20px);
+}
+
+@media (width < 992px) {
+  .list__footer-form {
+    margin-inline: 15px;
+  }
+}
+@media (width < 540px) {
+  .list__footer-form {
+    min-width: 250px;
+  }
+  .list__footer-input {
+    width: 250px;
+  }
+
+  .list__footer-button {
+    width: 90px;
+    justify-content: start;
+  }
 }

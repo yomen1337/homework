@@ -2,13 +2,27 @@
   margin-top: 47px;
 }
 
+@media (width <= 768px) {
+  .section-title {
+    /* min 375 max 1440*/
+    font-size: clamp(32px, 1.78rem + 0.94vw, 42px);
+  }
+}
+
 .bm__cards {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* flex-wrap: wrap; */
   gap: 28px;
   margin-top: 56px;
   margin-bottom: 28px;
+}
+
+@media (width < 1250px) {
+  .bm__cards {
+    flex-wrap: wrap;
+  }
 }
 
 .bm__card {

@@ -28,31 +28,6 @@
   transition: transform var(--trans-time);
 }
 
-/* .product__scroll-1 {
-  position: absolute;
-  bottom: 34px;
-  left: 322px;
-  width: 194px;
-  height: 2px;
-  background-color: #000;
-}
-.product__scroll-2 {
-  position: absolute;
-  bottom: 34px;
-  left: 550px;
-  width: 194px;
-  height: 2px;
-  background-color: #000;
-}
-.product__scroll-3 {
-  position: absolute;
-  bottom: 34px;
-  right: 322px;
-  width: 194px;
-  height: 2px;
-  background-color: #000;
-} */
-
 .product__slider-pagination {
   display: flex;
   justify-content: center;
@@ -97,23 +72,31 @@
   justify-content: space-between;
 }
 
-.product__slide-left {
-  position: relative;
-  left: 56px;
-  width: 650px;
+@media (width >= 768px) {
+  .product__slide-left {
+    position: relative;
+    left: 56px;
+    max-width: 650px;
+  }
 }
 
 .product__title {
   font-family: var(--secondf);
   font-weight: 400;
-  font-size: 58px;
+  /* min 375 max 1440 */
+  font-size: clamp(32px, 0.076rem + 3.94vw, 58px);
   line-height: 120%;
   color: var(--main-color);
   padding-bottom: 19px;
 }
 
 .product__desc {
-  width: 565px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(12px, 0.662rem + 0.38vw, 16px);
+  line-height: 120%;
+  color: var(--main-color);
+  max-width: 565px;
   padding-bottom: 30px;
 }
 
@@ -128,9 +111,11 @@
   transform: scale(1.05);
 }
 
-.product__slide-right {
-  position: relative;
-  top: 4px;
+@media (width > 768px) {
+  .product__slide-right {
+    position: relative;
+    top: 4px;
+  }
 }
 
 .product__slide-button--back {
@@ -138,19 +123,27 @@
   transform: translateY(-50%) rotate(180deg);
 }
 
-/* .swiper {
-  z-index: var(--z--1);
+@media (width < 768px) {
+  .product__slide {
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .product__slide-left {
+    /* padding: 0; */
+    /* width: auto; */
+    /* flex-shrink: 1; */
+    /* width: 100%; */
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .product__button {
+    width: 200px;
+    /* transform: translateX(20px); */
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
- */

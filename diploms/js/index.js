@@ -1,4 +1,5 @@
 import { productSlider } from "./presents-slider.js";
+import Modal from "./modal.js";
 
 // try {
 //   const headerFixed = new HeaderFixed({
@@ -29,5 +30,10 @@ import { productSlider } from "./presents-slider.js";
 //     PAGE_BODY: "page__body",
 //     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
 //   });
+
+new Modal({
+  PAGE_BODY: "page__body",
+  PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
+});
 
 productSlider();

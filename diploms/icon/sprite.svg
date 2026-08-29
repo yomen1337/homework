@@ -11,4 +11,10 @@
     <symbol id="arrow" width="12" height="7" viewBox="0 0 12 7" fill="none">
         <path d="M10.5303 0.530331L5.53033 5.53033L0.530334 0.530331" stroke-width="1.5" />
     </symbol>
+    <symbol id="menu-burger"  viewBox="0 0 20 14" fill="none">
+        <path d="M19 7H7M19 13H5M19 1H1" stroke="#dce5e2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="menu-close"  viewBox="0 0 24 24" >
+        <path d="M13 1L1 13M1 1L13 13" stroke="#f80000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
 </svg>

@@ -19,12 +19,14 @@
     ></script>
     <script src="./js/index.js" type="module"></script>
     <script src="./js/search-list.js" type="module"></script>
+    <!-- <script src="./js/burger.js" type="module"></script> -->
+    <script src="./js/modal.js" type="module"></script>
     <title>California</title>
   </head>
   <body class="page__body">
     <header class="header">
       <div class="container header__container">
-        <a class="logo logo__header" href="#">
+        <a class="logo header__logo" href="#">
           <svg width="170" height="21">
             <use class="logo__img" href="./icon/logo.svg#logo"></use>
           </svg>
@@ -37,45 +39,27 @@
           <ul class="menu__list title">
             <li class="menu__item" title="all products">
               <a href="#all-products" class="menu__link">all products</a>
-            </li>
-            <!-- <li class="menu__item" title="Solutions">
-              <a href="#" class="menu__link menu__link-more">
-                Solutions
-                <svg class="menu__arrow-svg" width="15" height="9">
-                  <use href="./icon/sprite.svg#arrow"></use>
-                </svg>
-              </a>
-              <ul class="menu__drop-list">
-                <li class="menu__drop-item">
-                  <a href="#" class="menu__drop-link">Apple</a>
-                </li>
-                <li class="menu__drop-item">
-                  <a href="#" class="menu__drop-link">Samsung</a>
-                </li>
-                <li class="menu__drop-item">
-                  <a href="#" class="menu__drop-link">Xiaomi</a>
-                </li>
-                <li class="menu__drop-item">
-                  <a
-                    href="https://avatars.mds.yandex.net/i?id=4120402e482d3b53ed221daf6273ef54_l-12260990-images-thumbs&n=13"
-                    class="menu__drop-link"
-                    >БЕЛАЗ-7521</a
-                  >
-                </li>
-              </ul> -->
               <li class="menu__item dropdown" title="Solutions">
-                <a class="dropbtn">
+                <a href="#" class="menu__link">
                   Solutions
                 <svg class="menu__arrow-svg" width="15" height="9">
                   <use href="./icon/sprite.svg#arrow"></use>
                 </svg>
                 </a>
-                   <div class="dropdown-content">
-                    <a href="https://www.amazon.in/">Amazon</a>
-                    <a href="https://www.flipkart.com/">Flipkart</a>
-                    <a href="https://www.snapdeal.com/">napdeal</a>
-                    <a href="https://paytm.com/">paytm</a>
-                  </div>
+                <ul class="menu__drop-menu">
+                  <li class="menu__drop-item">
+                    <a href="" class="menu__link menu__drop-link" title="Apple">Apple</a>
+                  </li>
+                  <li class="menu__drop-item">
+                    <a href="" class="menu__link menu__drop-link" title="Samsung">Samsung</a>
+                  </li>
+                  <li class="menu__drop-item">
+                    <a href="" class="menu__link menu__drop-link" title="Xiaomi">Xiaomi</a>
+                  </li>
+                  <li class="menu__drop-item">
+                    <a href="https://avatars.mds.yandex.net/i?id=4120402e482d3b53ed221daf6273ef54_l-12260990-images-thumbs&n=13" class="menu__link menu__drop-link" title="БЕЛАЗ-7521">БЕЛАЗ-7521</a>
+                  </li>
+                </ul>
               </li>
             </li>
             <li class="menu__item" title="About">
@@ -87,7 +71,11 @@
           </ul>
         </nav>
         <div class="header__store">
-          <button class="header__actions-button" title="search">
+          <button 
+           class="header__actions-button"
+           data-modal-button="search"
+           data-modal-speed="300"
+           title="search">
             <svg class="header__icon-search" width="24" height="24">
               <use href="./icon/sprite.svg#search"></use>
             </svg>
@@ -100,8 +88,8 @@
         </div>
       </div>
     </header>
-    <main class="main">
-     <section class="presents">
+      <main class="main">
+         <section class="presents">
         <div class="container">
           <section class="product">
             <div class="product__slider-wrapper">
@@ -218,7 +206,7 @@
           </section>
         </div>
       </section>
-      <section class="shop">
+       <section class="shop">
         <div class="container">
           <div class="shop__text">
             <h2 class="shop__title section-title">
@@ -230,7 +218,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div class="shop__container">
+           <div class="shop__container">
             <article class="shop__card laptop">
               <img
                 width="500"
@@ -243,7 +231,7 @@
                 <h3 class="shop__info-title">True Laptop Solution</h3>
               </div>
             </article>
-            <article class="shop__card watch">
+             <article class="shop__card watch">
               <div class="shop__card-main">
                 <img
                   class="shop__watch"
@@ -281,11 +269,11 @@
                 src="./image/shop/png/ruk.png"
                 alt="Tablet"
               />
-            </article>
-          </div>
+            </article> 
+          </div> 
         </div>
-      </section>
-      <section class="ode">
+      </section> 
+       <section class="ode">
         <div class="container">
           <div class="ode__text">
             <h2 class="ode__title section-title">
@@ -412,8 +400,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="bm">
+      </section> 
+        <section class="bm">
         <div class="container">
           <div class="bm__text">
             <h2 class="bm__title section-title">See the best around here</h2>
@@ -480,8 +468,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="idea">
+      </section> 
+       <section class="idea">
         <div class="container">
           <div class="idea__text">
             <h2 class="idea__title section-title">Ideas have a place here</h2>
@@ -539,10 +527,10 @@
             </svg>
           </a>
         </div>
-      </section>
-      <section class="list">
+      </section> 
+       <section class="list">
         <div class="container">
-          <div class="list__header">
+           <div class="list__header">
             <h2 class="list__title">Looking for anything else?</h2>
             <form class="list__form" action="#">
               <svg class="list__icon-search" width="30" height="29">
@@ -584,8 +572,8 @@
                 <button class="list__tag searchTag">Mobile</button>
               </li>
             </ul>
-          </div>
-          <div class="list__footer">
+          </div> 
+           <div class="list__footer">
             <div class="list__footer-title">
               <h2 class="list__title">Never miss a thing</h2>
               <p class="list__desc">
@@ -618,11 +606,11 @@
                 </button>
               </a>
             </div>
-          </div>
+          </div> 
         </div>
-      </section>
-    </main>
-    <footer class="footer">
+      </section> 
+    </main> 
+      <footer class="footer"> 
       <div class="footer__container">
         <div class="footer__header">
           <div class="footer__icon">
@@ -705,6 +693,33 @@
           </a>
         </div>
       </div>
-    </footer>
+    </footer>  
+    
+  <div class="modal">
+    <div class="modal__window modal-buy" data-modal-window="search">
+      <button
+       class="modal__close"
+        aria-label="Close"
+        title="Close"
+        data-modal-close>
+        <svg width="24" height="24">
+          <use class="modal__close-svg" width="24" height="24" href="./icon/sprite.svg#menu-close"></use>
+        </svg>
+      </button>
+      <div class="modal__content modal-search_content">
+        <h3 class="modal-buy__title">Search</h3>
+        <form class="modal-buy__form">
+          <label  class="modal-buy__label">
+            <input 
+            class="modal-buy__input" 
+            type="text" 
+            placeholder="enter a request" 
+            name="search">
+          </label>
+          <button class="modal-buy__search">To find</button>
+        </form>
+      </div>
+    </div>
+  </div>
   </body>
 </html>

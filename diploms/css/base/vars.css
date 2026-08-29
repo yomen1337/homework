@@ -16,7 +16,7 @@
 
   /* container */
   --container-width: 1294px;
-  --container-padding: 73px;
+  --container-padding: 10px;
 
   /* transition */
   --trans-time: 0.8s;
@@ -27,4 +27,5 @@
   --z-1: 1;
   --z-2: 2;
   --z-3: 3;
+  --z-4: 4;
 }
