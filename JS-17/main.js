@@ -43,15 +43,14 @@ console.log(`Ваша скидка: ${discount}%`);
 //     то выведите сообщение "Доступ разрешен", иначе — "Доступ запрещен".
 // 3. Используйте prompt для ввода имени пользователя и пароля.
 
-const userName = +prompt("Введите логин");
-const userPassword = +prompt("Введите пороль");
+const userName = prompt("Введите логин");
+const passwordInput = +prompt("Введите пароль");
 
-switch (true) {
-  case userName == "admin" || "user":
-  case userPassword === 123456:
-    alert("Заходи брат");
-    break;
-  default:
-    alert("Не, тебе не сюда");
+const userPassword = Number(passwordInput);
+
+if ((userName === "admin" || userName === "user") && userPassword === 123456) {
+  alert("Заходи брат");
+} else {
+  alert("Не, тебе не сюда");
 }
 
