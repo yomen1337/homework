@@ -72,3 +72,26 @@ for (let key in modTask) {
 //     property: 'Это не метод'
 // };
 // callAllMethods(myObject);
+
+function callAllMethods(object) {
+  for (const key in object) {
+    if (
+      Object.hasOwnProperty.call(object, key) &&
+      typeof object[key] === "function"
+    ) {
+      object[key]();
+    }
+  }
+}
+
+const myObject = {
+  method1() {
+    console.log("Метод 1 вызван");
+  },
+  method2() {
+    console.log("Метод 2 вызван");
+  },
+  property: "Это не метод",
+};
+
+callAllMethods(myObject);
